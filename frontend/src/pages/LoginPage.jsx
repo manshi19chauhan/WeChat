@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Video } from "lucide-react";
 import { Link } from "react-router";
-import useLogin from "../hooks/useLogin.jsx";
+import useLogin from "../hooks/useLogin.js";
 
 const LoginPage = () => {
   const [loginData, setLoginData] = useState({
