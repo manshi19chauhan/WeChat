@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Video } from "lucide-react";
 import {Link } from "react-router";
-import useSignUp from "../hooks/useSignup.js";
+import useSignup from "../hooks/useSignup.js";
 
 const SignupPage = () => {
 
@@ -22,7 +22,7 @@ const SignupPage = () => {
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ["authUser"] }), //everything went somethly so we gonna refetch the query
   }); */
     // This is how we did it using our custom hook
-  const { isPending, error, signupMutation } = useSignUp();
+  const { isPending, error, signupMutation } = useSignup();
 
 
   const handleSignup = (e) => { //on clicking submit it runs
