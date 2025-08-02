@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Video } from "lucide-react";
 import {Link } from "react-router";
-import useSignUp from "../hooks/useSignUp";
+import useSignUp from "../hooks/useSignUp.jsx";
 
 const SignupPage = () => {
 

@@ -2,11 +2,10 @@ import { Link } from "react-router";
 import { Users } from "lucide-react";
 import NoFriendsFound from "../components/NoFriendsFound.jsx";
 import FriendCard from "../components/FriendCard.jsx";
-import { useQueryClient, useQuery, useMutation } from "@tanstack/react-query";
+import { useQuery} from "@tanstack/react-query";
 import { getUserFriends } from "../lib/api.js";
 
 const FriendsPage = () => {
-  const queryClient = useQueryClient();
 
   const { data: friends = [], isLoading: loadingFriends } = useQuery({
     queryKey: ["Friends"],
